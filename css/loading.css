@@ -1,0 +1,13 @@
+.orb{position:relative;width:150px;height:150px;display:grid;place-items:center;margin-bottom:8px}
+.ring{position:absolute;inset:0;border-radius:50%;border:3px solid transparent;border-top-color:var(--blue2);border-right-color:rgba(45,140,255,.35);animation:spin 1.3s linear infinite;box-shadow:0 0 30px rgba(45,140,255,.35)}
+.ring.r2{inset:16px;border-top-color:#00d2ff;animation-duration:2s;animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+#load-pct{font-size:1.6rem;font-weight:700}
+.load-msg{min-height:1.6em;font-size:1.05rem;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}}
+.bar{width:min(320px,80%);height:6px;border-radius:99px;background:rgba(255,255,255,.12);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),#00d2ff);transition:width .4s ease;border-radius:99px}
+.load-log{list-style:none;margin:6px 0 0;padding:0;font-size:.8rem;color:var(--mut);display:flex;flex-direction:column;gap:3px;max-height:150px;overflow:hidden}
+.load-log li::before{content:"✓ ";color:#3ddc84}
+.load-log li{animation:fade .3s ease}
+.load-summary{margin-top:8px;color:#fff;font-weight:600}
