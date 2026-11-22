@@ -1,0 +1,16 @@
+{
+  "name": "Mobile PS5",
+  "short_name": "Mobile PS5",
+  "description": "Plataforma mobile inspirada na experiência do PS5, com controles virtuais e base para streaming.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#050a18",
+  "theme_color": "#050a18",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
